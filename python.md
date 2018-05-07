@@ -1,1 +1,1 @@
-    # raise an exception on failure rather than return success value
+# raise an exception on failure rather than return success value
