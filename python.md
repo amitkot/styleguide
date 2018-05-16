@@ -4,6 +4,6 @@
 ## Prefer Helper Classes Over Bookkeeping with Dictionaries and Tuples
 
 # Resources
-- https://github.com/google/styleguide/blob/gh-pages/pyguide.md
+- [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
 - http://docs.python-guide.org/en/latest/
 - [Effective Python › The Book](https://effectivepython.com/)
