@@ -3,6 +3,12 @@
 ## Getters should not manipulate state, setters should return None
 ## Prefer Helper Classes Over Bookkeeping with Dictionaries and Tuples
 
+# Style
+## Prefer parentheses over backslash for line continuation
+> The preferred way of wrapping long lines is by using Python's implied line continuation inside parentheses, brackets and braces. Long lines can be broken over multiple lines by wrapping expressions in parentheses. These should be used in preference to using a backslash for line continuation.
+> &mdash; <cite>[PEP8](https://www.python.org/dev/peps/pep-0008/#id19)</cite>
+
+
 ## Add line break before binary operators 
 ### Example
 ```python
