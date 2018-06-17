@@ -4,9 +4,38 @@
 ## Prefer Helper Classes Over Bookkeeping with Dictionaries and Tuples
 
 # Style
+
+## Prefix identifiers with underscore to indicate internal implementation
+```python
+# No: internal and API attributes and functions using same naming scheme
+class Foo:
+    def __init__(self, height):
+        self.height = height
+        
+    def update_height(self):
+        self.internal_update_height()
+        
+    def internal_update_height(self):
+        self.height += 1
+```
+```python
+# Yes: internal attributes and functions are prefixed with underscore
+class Foo:
+    def __init__(self, height):
+        self._height = height
+        
+    def update_height(self):
+        self._internal_update_height()
+        
+    def _internal_update_height(self):
+        self._height += 1
+```
+See [PEP8](https://www.python.org/dev/peps/pep-0008/#descriptive-naming-styles).
+
+
 ## Prefer parentheses over backslash for line continuation
 > The preferred way of wrapping long lines is by using Python's implied line continuation inside parentheses, brackets and braces. Long lines can be broken over multiple lines by wrapping expressions in parentheses. These should be used in preference to using a backslash for line continuation.
-> &mdash; <cite>[PEP8](https://www.python.org/dev/peps/pep-0008/#id19)</cite>
+> &mdash; <cite>[PEP8](https://www.python.org/dev/peps/pep-0008/#maximum-line-length)</cite>
 
 
 ## Add line break before binary operators 
