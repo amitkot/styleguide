@@ -61,6 +61,23 @@ income = (gross_wages
 PEP8 [recommends](https://www.python.org/dev/peps/pep-0008/#should-a-line-break-before-or-after-a-binary-operator) using Knuth's style, adding a new line before binary operators.
 
 
+## Type annotations
+### Suggested Template
+```python
+def send_email(address: Union[str, List[str]],
+               sender: str,
+               cc: Optional[List[str]],
+               bcc: Optional[List[str]],
+               subject='',
+               body: Optional[List[str]] = None
+               ) -> bool:
+    ...
+```
+
+### Useful Reference
+- Usefult Cheatsheet from the MyPy Project: https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html
+
+
 # Resources
 - [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html) or just the markdown file [here](https://github.com/google/styleguide/blob/gh-pages/pyguide.md)
 - http://docs.python-guide.org/en/latest/
