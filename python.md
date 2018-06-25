@@ -61,6 +61,18 @@ income = (gross_wages
 PEP8 [recommends](https://www.python.org/dev/peps/pep-0008/#should-a-line-break-before-or-after-a-binary-operator) using Knuth's style, adding a new line before binary operators.
 
 
+## Long import format
+As we [prefer parentheses over backslash](#prefer-parentheses-over-backslash-for-line-continuation), for long import lines use the following template:
+
+```python
+from module_name import (
+    first_thing,
+    second_thing,
+    last_thing,
+)
+```
+
+
 ## Type annotations
 ### Suggested Template
 ```python
