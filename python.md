@@ -73,6 +73,21 @@ from module_name import (
 ```
 
 
+## Detect empty collections using truth value rather than `len()`
+> For sequences, (strings, lists, tuples), use the fact that empty sequences are false.
+> &mdash; <cite>[PEP8](https://www.python.org/dev/peps/pep-0008/#programming-recommendations)</cite>
+
+```python
+#Yes: 
+if not seq:
+   if seq:
+
+#No: 
+if len(seq):
+    if not len(seq):
+````
+
+
 ## Type annotations
 ### Suggested Template
 ```python
