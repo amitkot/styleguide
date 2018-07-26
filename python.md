@@ -1,7 +1,19 @@
 
 ## Raise an exception for failure rather than (ab)using return value
+
 ## Getters should not manipulate state, setters should return None
+
 ## Prefer Helper Classes Over Bookkeeping with Dictionaries and Tuples
+Selecting the right data structure depends on the data being kept there and on the
+expected interactions.
+
+- Used only once, e.g. for returning a pair of results from a function -> `tuple`.
+- Used in multiple places for grouping relevant items with no additional functionality -> `namedtuple`.
+- Used in multiple places to group items which also have shared functionality -> `class`.
+- Grouping multiple _named_ items of the same type with no additional functionality -> `dict`.
+- Grouping multiple _named_ items of the same type with additional functionality -> `class` with getters and setters.
+
+
 
 # Style
 
